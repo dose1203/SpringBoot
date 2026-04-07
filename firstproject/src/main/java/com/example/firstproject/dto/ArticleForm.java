@@ -1,9 +1,10 @@
 package com.example.firstproject.dto;
 
 public class ArticleForm {
-    private String title;
-    private String content;
+    private String title; //제목 데이터
+    private String content; //내용 데이터
 
+    //전송받은 제목과 내용을 필드에 저장하는 생성자 추가
     public ArticleForm(String title, String content) {
         this.title = title;
         this.content = content;

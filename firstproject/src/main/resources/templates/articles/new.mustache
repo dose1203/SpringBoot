@@ -1,16 +1,16 @@
-{{>layouts/header}}
+{{>layouts/header}} <!-- 상단 ui 불러오기 -->
 
 
-<form class="container" action="/articles/create" method="post">
+<form class="container" action="/articles/create" method="post"> <!-- Bootstrap 폼 시작 action: 데이터 보낼 URL method: POST 방법으로 데이터 전송 -->
     <div class="mb-3">
-        <lable class="form-label">제목</lable>
-        <input type="text" class ="form-control" name="title">
+        <lable class="form-label">제목</lable> <!-- 라벨 텍스트 -->
+        <input type="text" class ="form-control" name="title"><!-- name="title" → 서버에서 title로 데이터 받음 -->
     </div>
     <div class="mb-3">
         <label class="form-label">내용</label>
-        <textarea class="form-control" rows="3" name="content"></textarea>
+        <textarea class="form-control" rows="3" name="content"></textarea><!-- name="content" → 서버에서 content로 데이터 받음 -->
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button> <!-- 제출 버튼 클릭-> 폼 데이터가 action 주소 전송 -->
 </form>
 
-{{>layouts/footer}}
+{{>layouts/footer}} <!-- 하단 ui 불러오기 -->
